@@ -27,6 +27,16 @@ def self.artists
   @@artists.uniq
 end
 
+def self.summary_of_hash(array)
+  histogram = {}
+  array.each do |value|
+    if histogram|value| then histogram|value| += 1 
+    else histogram|value| = 1 
+    end
+  end
+  histogram
+end
+
 def self.genre_count
 
 end

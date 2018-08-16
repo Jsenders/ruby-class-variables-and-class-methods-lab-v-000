@@ -28,9 +28,11 @@ def self.artists
 end
 
 def self.genre_count
+  build_summary_hash(@@genres)
 end
 
 def self.artist_count
+  build_summary_hash(@@artists)
 end
 
 end

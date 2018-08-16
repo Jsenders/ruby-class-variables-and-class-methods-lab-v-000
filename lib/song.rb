@@ -30,19 +30,19 @@ end
 def self.summary_of_hash(array)
   histogram = {}
   array.each do |value|
-    if histogram|value| then histogram|value| += 1 
-    else histogram|value| = 1 
+    if histogram|value| then histogram|value| += 1
+    else histogram|value| = 1
     end
   end
   histogram
 end
 
 def self.genre_count
-
+summary_of_hash(@@genres)
 end
 
 def self.artist_count
-
+summary_of_hash(@@artists)
 end
 
 end
